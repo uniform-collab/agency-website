@@ -1,6 +1,7 @@
 "use client"
 
-import React from "react"
+import React from "react" 
+import { motion } from "motion/react";
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
@@ -25,7 +26,6 @@ import {
   Brain,
   Award,
 } from "lucide-react"
-import { motion } from "framer-motion"
 import { AuroraBackground } from "@/components/ui/aurora-background"
 
 export default function AgencyLandingPage() {
