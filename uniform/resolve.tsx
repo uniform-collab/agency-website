@@ -14,6 +14,14 @@ import Header from "@/components/navigation/Header";
 import Footer from "@/components/navigation/Footer";
 import { PageComponent } from "@/components/Page";
 import { UniformButton } from "@/components/ui/UniformButton";
+import { Feature } from "@/components/ui/Feature";
+import { FormField } from "@/components/ui/FormField";
+import { ServiceCard } from "@/components/ui/ServiceCard";
+import { ProjectCard } from "@/components/ui/ProjectCard";
+import { ProcessStep } from "@/components/ui/ProcessStep";
+import { MenuItem } from "@/components/ui/MenuItem";
+import { SocialLink } from "@/components/ui/SocialLink";
+import { LegalLink } from "@/components/ui/LegalLink";
 
 export const resolveComponent: ResolveComponentFunction = ({ component }) => {
   let result: ResolveComponentResult = {
@@ -34,6 +42,46 @@ export const resolveComponent: ResolveComponentFunction = ({ component }) => {
     case "button":
       result = {
         component: UniformButton,
+      };
+      break;
+    case "feature":
+      result = {
+        component: Feature,
+      };
+      break;
+    case "formField":
+      result = {
+        component: FormField,
+      };
+      break;
+    case "serviceCard":
+      result = {
+        component: ServiceCard,
+      };
+      break;
+    case "projectCard":
+      result = {
+        component: ProjectCard,
+      };
+      break;
+    case "processStep":
+      result = {
+        component: ProcessStep,
+      };
+      break;
+    case "menuItem":
+      result = {
+        component: MenuItem,
+      };
+      break;
+    case "socialLink":
+      result = {
+        component: SocialLink,
+      };
+      break;
+    case "legalLink":
+      result = {
+        component: LegalLink,
       };
       break;
     case "cardGridSection":

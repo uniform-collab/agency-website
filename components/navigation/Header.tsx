@@ -2,32 +2,22 @@
 
 import React from "react";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
 import * as LucideIcons from "lucide-react";
+import { ComponentProps, UniformText, UniformSlot } from "@uniformdev/canvas-next-rsc/component";
 
-interface MenuItem {
-  label: string;
-  href: string;
-}
+type HeaderParameters = {
+  brandName?: string;
+  brandIcon?: string;
+};
 
-interface Brand {
-  name: string;
-  icon: string;
-}
+type HeaderSlots = 'menuItems' | 'ctaButton';
 
-interface CtaButton {
-  label: string;
-  href: string;
-}
+type HeaderProps = ComponentProps<HeaderParameters, HeaderSlots>;
 
-interface HeaderProps {
-  brand: Brand;
-  menuItems: MenuItem[];
-  ctaButton: CtaButton;
-}
-
-export default function Header({ brand, menuItems, ctaButton }: HeaderProps) {
-  const IconComponent = LucideIcons[brand.icon as keyof typeof LucideIcons] as React.ComponentType<any>;
+export default function Header({ component, context, slots }: HeaderProps) {
+  const brandName = component?.parameters?.brandName?.value as string || '';
+  const brandIcon = component?.parameters?.brandIcon?.value as string || '';
+  const IconComponent = brandIcon ? LucideIcons[brandIcon as keyof typeof LucideIcons] as React.ComponentType<any> : null;
 
   return (
     <header className="sticky top-0 z-50 w-full bg-white/50 backdrop-blur-xl border-b border-white/60 shadow-sm">
@@ -38,25 +28,27 @@ export default function Header({ brand, menuItems, ctaButton }: HeaderProps) {
             className="flex items-center space-x-2 text-2xl font-bold text-slate-900"
           >
             {IconComponent && <IconComponent className="h-8 w-8 text-blue-600" />}
-            <span>{brand.name}</span>
+            <UniformText
+              component={component}
+              context={context}
+              parameterId="brandName"
+              as="span"
+            />
           </Link>
           <nav className="hidden md:flex space-x-8 items-center">
-            {menuItems.map((item) => (
-              <Link
-                key={item.label}
-                href={item.href}
-                className="text-slate-600 hover:text-slate-900 transition-colors font-medium"
-              >
-                {item.label}
-              </Link>
-            ))}
+            <UniformSlot 
+              context={context} 
+              data={component} 
+              slot={slots.menuItems} 
+            />
           </nav>
-          <Button
-            asChild
-            className="hidden md:inline-flex bg-gradient-to-b from-slate-50 via-slate-200 to-slate-50 text-slate-800 font-semibold border border-slate-400/50 shadow-md hover:brightness-105 active:brightness-95 transition-all"
-          >
-            <Link href={ctaButton.href}>{ctaButton.label}</Link>
-          </Button>
+          <div className="hidden md:inline-flex">
+            <UniformSlot 
+              context={context} 
+              data={component} 
+              slot={slots.ctaButton} 
+            />
+          </div>
         </div>
       </div>
     </header>

@@ -7,17 +7,29 @@ type PageParameters = {
   metaTitle?: string;
 };
 
-type PageSlots = 'content';
+type PageSlots = 'header' | 'content' | 'footer';
 
 type PageProps = ComponentProps<PageParameters, PageSlots>;
 
 export const PageComponent = ({ slots, context, component }: PageProps) => {
   return (
-    <div>
+    <div className="min-h-screen flex flex-col">
       <UniformSlot 
         context={context} 
         data={component} 
-        slot={slots.content} 
+        slot={slots.header} 
+      />
+      <main className="flex-1">
+        <UniformSlot 
+          context={context} 
+          data={component} 
+          slot={slots.content} 
+        />
+      </main>
+      <UniformSlot 
+        context={context} 
+        data={component} 
+        slot={slots.footer} 
       />
     </div>
   );
