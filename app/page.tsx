@@ -35,7 +35,6 @@ export default function AgencyLandingPage() {
         {/* Client Logos Section */}
         <MarqueeSection
           title={cmsData.clientLogos.title}
-          logoCount={cmsData.clientLogos.logoCount}
         />
 
         {/* About Section */}
