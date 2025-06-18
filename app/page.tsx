@@ -2,14 +2,13 @@
 
 import React from "react";
 import cmsData from "../cms.json";
-import { Header, Footer } from "@/components/navigation";
-import {
-  HeroSection,
-  MarqueeSection,
-  ImageTextSection,
-  CardGridSection,
-  ContactFormSection,
-} from "@/components/sections";
+import Header from "@/components/navigation/Header";
+import Footer from "@/components/navigation/Footer";
+import HeroSection from "@/components/sections/HeroSection";
+import MarqueeSection from "@/components/sections/MarqueeSection";
+import ImageTextSection from "@/components/sections/ImageTextSection";
+import CardGridSection from "@/components/sections/CardGridSection";
+import ContactFormSection from "@/components/sections/ContactFormSection";
 
 export default function AgencyLandingPage() {
   return (
