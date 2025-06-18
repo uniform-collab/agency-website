@@ -211,6 +211,42 @@ export default function AgencyLandingPage() {
           </motion.div>
         </AuroraBackground>
 
+
+        {/* Client Logos Section */}
+        <section className="py-12 md:py-16 bg-white/30">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h3 className="text-center text-xl font-semibold text-slate-600 mb-8">Trusted by Industry Titans</h3>
+            <div className="relative overflow-hidden">
+              <div className="flex animate-marquee">
+                {/* First set of logos */}
+                {[...Array(5)].map((_, i) => (
+                  <div key={i} className="flex-shrink-0 mx-8 md:mx-12 lg:mx-16">
+                    <Image
+                      src={`/placeholder-logo.svg?height=50&width=150&query=tech+company+logo+${i + 1}`}
+                      alt={`Client Logo ${i + 1}`}
+                      width={150}
+                      height={50}
+                      className="opacity-60 hover:opacity-100 transition-opacity"
+                    />
+                  </div>
+                ))}
+                {/* Duplicate set for seamless loop */}
+                {[...Array(5)].map((_, i) => (
+                  <div key={`duplicate-${i}`} className="flex-shrink-0 mx-8 md:mx-12 lg:mx-16">
+                    <Image
+                      src={`/placeholder-logo.svg?height=50&width=150&query=tech+company+logo+${i + 1}`}
+                      alt={`Client Logo ${i + 1}`}
+                      width={150}
+                      height={50}
+                      className="opacity-60 hover:opacity-100 transition-opacity"
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+        
         {/* About Us Snippet */}
         <section id="about" className="py-16 md:py-24">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -393,25 +429,6 @@ export default function AgencyLandingPage() {
                   </div>
                 ))}
               </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Client Logos Section */}
-        <section className="py-12 md:py-16 bg-white/30">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <h3 className="text-center text-xl font-semibold text-slate-600 mb-8">Trusted by Industry Titans</h3>
-            <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 lg:gap-16">
-              {[...Array(5)].map((_, i) => (
-                <Image
-                  key={i}
-                  src={`/placeholder-logo.svg?height=50&width=150&query=tech+company+logo+${i + 1}`}
-                  alt={`Client Logo ${i + 1}`}
-                  width={150}
-                  height={50}
-                  className="opacity-60 hover:opacity-100 transition-opacity"
-                />
-              ))}
             </div>
           </div>
         </section>
