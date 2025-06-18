@@ -2,32 +2,23 @@
 
 import React from "react";
 import { motion } from "motion/react";
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
 import { AuroraBackground } from "@/components/ui/aurora-background";
+import { ComponentProps, UniformText, UniformRichText, UniformSlot } from "@uniformdev/canvas-next-rsc/component";
+import { RichTextParamValue } from "@uniformdev/canvas";
 
-interface HeroTitle {
-  line1: string;
-  line2: string;
-}
+type HeroSectionParameters = {
+  title?: string;
+  subtitle?: RichTextParamValue;
+};
 
-interface HeroButton {
-  label: string;
-  href: string;
-}
+type HeroSectionSlots = 'buttons';
 
-interface HeroSectionProps {
-  title: HeroTitle;
-  subtitle: string;
-  primaryButton: HeroButton;
-  secondaryButton: HeroButton;
-}
+type HeroSectionProps = ComponentProps<HeroSectionParameters, HeroSectionSlots>;
 
 export default function HeroSection({
-  title,
-  subtitle,
-  primaryButton,
-  secondaryButton,
+  component,
+  context,
+  slots,
 }: HeroSectionProps) {
   return (
     <AuroraBackground id="home">
@@ -42,31 +33,25 @@ export default function HeroSection({
         className="relative flex flex-col gap-4 items-center justify-center px-4"
       >
         <div className="text-center py-4">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight mb-6 text-slate-900 leading-tight overflow-visible">
-            <span className="block leading-tight">{title.line1}</span>
-            <span className="block bg-gradient-to-r from-slate-700 to-slate-900 text-transparent bg-clip-text leading-tight">
-              {title.line2}
-            </span>
-          </h1>
-          <p className="max-w-xl md:max-w-2xl lg:max-w-3xl mx-auto text-lg sm:text-xl text-slate-600 mb-10">
-            {subtitle}
-          </p>
+          <UniformText
+            component={component}
+            context={context}
+            parameterId="title"
+            as="h1"
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight mb-6 text-slate-900 leading-tight overflow-visible"
+          />
+          <UniformRichText
+            component={component}
+            context={context}
+            parameterId="subtitle"
+            className="max-w-xl md:max-w-2xl lg:max-w-3xl mx-auto text-lg sm:text-xl text-slate-600 mb-10"
+          />
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
-            <Button
-              size="lg"
-              asChild
-              className="bg-gradient-to-b from-slate-50 via-slate-200 to-slate-50 text-slate-800 font-semibold border border-slate-400/50 shadow-lg hover:brightness-105 active:brightness-95 transition-all px-8 py-3 text-lg"
-            >
-              <Link href={primaryButton.href}>{primaryButton.label}</Link>
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              asChild
-              className="bg-transparent border-slate-500 text-slate-700 hover:bg-white/50 hover:text-slate-900 px-8 py-3 text-lg"
-            >
-              <Link href={secondaryButton.href}>{secondaryButton.label}</Link>
-            </Button>
+            <UniformSlot 
+              context={context} 
+              data={component} 
+              slot={slots.buttons} 
+            />
           </div>
         </div>
       </motion.div>

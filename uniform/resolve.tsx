@@ -13,6 +13,7 @@ import MarqueeSection from "@/components/sections/MarqueeSection";
 import Header from "@/components/navigation/Header";
 import Footer from "@/components/navigation/Footer";
 import { PageComponent } from "@/components/Page";
+import { UniformButton } from "@/components/ui/UniformButton";
 
 export const resolveComponent: ResolveComponentFunction = ({ component }) => {
   let result: ResolveComponentResult = {
@@ -28,6 +29,11 @@ export const resolveComponent: ResolveComponentFunction = ({ component }) => {
     case "heroSection":
       result = {
         component: HeroSection,
+      };
+      break;
+    case "button":
+      result = {
+        component: UniformButton,
       };
       break;
     case "cardGridSection":
