@@ -1,0 +1,266 @@
+{
+  "navigation": {
+    "brand": {
+      "name": "Reactr Studios",
+      "icon": "Atom"
+    },
+    "menuItems": [
+      { "label": "About", "href": "#about" },
+      { "label": "Mission", "href": "#mission" },
+      { "label": "Services", "href": "#services" },
+      { "label": "Work", "href": "#work" },
+      { "label": "Process", "href": "#process" },
+      { "label": "Contact", "href": "#contact" }
+    ],
+    "ctaButton": {
+      "label": "Get a Quote",
+      "href": "#contact"
+    }
+  },
+  "hero": {
+    "title": {
+      "line1": "Engineering the Apex of",
+      "line2": "Digital Interaction."
+    },
+    "subtitle": "We are Reactr Studios, an elite agency forging the next generation of Digital Experience Platforms with precision engineering and metallic design.",
+    "primaryButton": {
+      "label": "Forge Your Project",
+      "href": "#contact"
+    },
+    "secondaryButton": {
+      "label": "Explore Blueprints",
+      "href": "#services"
+    }
+  },
+  "clientLogos": {
+    "title": "Trusted by Industry Titans",
+    "logoCount": 5
+  },
+  "aboutSection": {
+    "title": "We Are Reactr Studios",
+    "paragraphs": [
+      "At Reactr Studios, we believe that superior digital platforms are forged, not just built. Our philosophy combines meticulous strategy, fluid design, and robust technology to create experiences that are both powerful and elegant.",
+      "We are your partners in innovation, dedicated to engineering digital solutions that stand the test of time and define market leadership."
+    ],
+    "features": [
+      {
+        "icon": "Brain",
+        "label": "Precision Strategy"
+      },
+      {
+        "icon": "Award", 
+        "label": "Engineered Excellence"
+      }
+    ],
+    "image": {
+      "src": "/placeholder.svg?width=600&height=450",
+      "alt": "Our Team Collaborating"
+    }
+  },
+  "missionSection": {
+    "title": "Our Core Catalyst",
+    "paragraphs": [
+      "Our mission is to be the catalyst for digital transformation, empowering businesses to achieve unprecedented levels of engagement and efficiency. We strive to engineer Digital Experience Platforms that are not only technologically advanced but also intuitively human-centric.",
+      "We are committed to pushing the boundaries of what's possible, crafting bespoke solutions that resonate with users, amplify brand narratives, and deliver sustainable growth for our clients. Reactr Studios is dedicated to building the future, one exceptional digital experience at a time."
+    ],
+    "features": [
+      {
+        "icon": "Zap",
+        "label": "Transformative Impact"
+      },
+      {
+        "icon": "Lightbulb",
+        "label": "Innovative Solutions"
+      }
+    ],
+    "image": {
+      "src": "/placeholder.svg?width=600&height=450",
+      "alt": "Our Mission Embodied"
+    }
+  },
+  "servicesSection": {
+    "title": "Our Core Schematics",
+    "subtitle": "A full suite of services to architect, construct, and refine your Digital Experience Platform.",
+    "services": [
+      {
+        "icon": "Search",
+        "iconColor": "text-purple-400",
+        "title": "DXP Strategy & Consulting",
+        "description": "Crafting bespoke DXP roadmaps aligned with your business goals for maximum impact and ROI."
+      },
+      {
+        "icon": "Layers",
+        "iconColor": "text-teal-400",
+        "title": "Platform Implementation",
+        "description": "Seamless integration and customization of leading DXP solutions tailored to your unique needs."
+      },
+      {
+        "icon": "Palette",
+        "iconColor": "text-pink-400",
+        "title": "Experience Design (UX/UI)",
+        "description": "Designing intuitive, engaging, and visually stunning user experiences that captivate and convert."
+      },
+      {
+        "icon": "Zap",
+        "iconColor": "text-yellow-400",
+        "title": "Personalization & Optimization",
+        "description": "Leveraging data to deliver hyper-personalized content and continuously optimize for performance."
+      },
+      {
+        "icon": "BarChart",
+        "iconColor": "text-green-400",
+        "title": "Analytics & Performance",
+        "description": "In-depth tracking and analysis to measure success and uncover actionable insights for growth."
+      },
+      {
+        "icon": "ShieldCheck",
+        "iconColor": "text-sky-400",
+        "title": "Support & Managed Services",
+        "description": "Ongoing support and management to ensure your DXP operates flawlessly and evolves with your business."
+      }
+    ]
+  },
+  "portfolioSection": {
+    "title": "Case Studies in Metal",
+    "subtitle": "Explore how we've engineered success for our clients with cutting-edge DXP solutions.",
+    "projects": [
+      {
+        "image": {
+          "src": "/placeholder.svg?width=600&height=400",
+          "alt": "Project Alpha Screenshot"
+        },
+        "title": "Project Alpha: E-commerce Revolution",
+        "description": "Transformed a legacy e-commerce platform into a dynamic, personalized shopping experience, boosting conversion by 40%.",
+        "tags": ["DXP", "Personalization", "UX/UI"]
+      },
+      {
+        "image": {
+          "src": "/placeholder.svg?width=600&height=400",
+          "alt": "Project Beta Screenshot"
+        },
+        "title": "Project Beta: Global Content Hub",
+        "description": "Launched a unified content platform for a multinational corporation, streamlining operations and enhancing brand consistency.",
+        "tags": ["CMS", "Integration", "Global Scale"]
+      },
+      {
+        "image": {
+          "src": "/placeholder.svg?width=600&height=400",
+          "alt": "Project Gamma Screenshot"
+        },
+        "title": "Project Gamma: Mobile-First Engagement",
+        "description": "Developed an award-winning mobile DXP solution, driving user engagement and loyalty for a leading service provider.",
+        "tags": ["Mobile DXP", "User Engagement", "API First"]
+      }
+    ]
+  },
+  "processSection": {
+    "title": "Our Assembly Line",
+    "subtitle": "Our structured process ensures quality, efficiency, and outstanding results at every stage.",
+    "steps": [
+      {
+        "icon": "Lightbulb",
+        "iconColor": "text-purple-400",
+        "title": "Discovery & Strategy",
+        "description": "Understanding your vision and defining a clear path to success."
+      },
+      {
+        "icon": "Palette",
+        "iconColor": "text-teal-400",
+        "title": "Design & Prototyping",
+        "description": "Crafting intuitive interfaces and validating concepts."
+      },
+      {
+        "icon": "Code",
+        "iconColor": "text-pink-400",
+        "title": "Development & Integration",
+        "description": "Building robust solutions with cutting-edge technology."
+      },
+      {
+        "icon": "Rocket",
+        "iconColor": "text-yellow-400",
+        "title": "Launch & Optimization",
+        "description": "Deploying and fine-tuning for peak performance."
+      },
+      {
+        "icon": "TrendingUp",
+        "iconColor": "text-green-400",
+        "title": "Continuous Growth",
+        "description": "Partnering for ongoing evolution and market leadership."
+      }
+    ]
+  },
+  "contactSection": {
+    "title": "Ready to Build Your Digital Legacy?",
+    "subtitle": "Let's discuss your project. Submit your details, and our engineers will be in touch to draft the blueprint for your success.",
+    "form": {
+      "fields": [
+        {
+          "name": "name",
+          "label": "Full Name",
+          "type": "text",
+          "required": true,
+          "gridColumn": "half"
+        },
+        {
+          "name": "email",
+          "label": "Email Address",
+          "type": "email", 
+          "required": true,
+          "gridColumn": "half"
+        },
+        {
+          "name": "company",
+          "label": "Company (Optional)",
+          "type": "text",
+          "required": false,
+          "gridColumn": "full"
+        },
+        {
+          "name": "message",
+          "label": "Project Details",
+          "type": "textarea",
+          "required": true,
+          "gridColumn": "full",
+          "rows": 4
+        }
+      ],
+      "submitButton": {
+        "label": "Initiate Collaboration"
+      }
+    }
+  },
+  "footer": {
+    "brand": {
+      "name": "Reactr Studios",
+      "icon": "Atom"
+    },
+    "copyright": "Reactr Studios. All rights reserved.",
+    "socialLinks": [
+      {
+        "icon": "Linkedin",
+        "href": "#",
+        "label": "LinkedIn"
+      },
+      {
+        "icon": "Twitter", 
+        "href": "#",
+        "label": "Twitter"
+      },
+      {
+        "icon": "Github",
+        "href": "#",
+        "label": "GitHub"
+      }
+    ],
+    "legalLinks": [
+      {
+        "label": "Privacy Policy",
+        "href": "#"
+      },
+      {
+        "label": "Terms of Service",
+        "href": "#"
+      }
+    ]
+  }
+} 
