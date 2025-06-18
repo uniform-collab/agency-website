@@ -61,4 +61,4 @@ export default function Header({ brand, menuItems, ctaButton }: HeaderProps) {
       </div>
     </header>
   );
-} 
+}

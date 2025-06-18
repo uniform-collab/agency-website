@@ -72,4 +72,4 @@ export default function HeroSection({
       </motion.div>
     </AuroraBackground>
   );
-} 
+}

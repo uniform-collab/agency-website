@@ -98,4 +98,4 @@ export default function ImageTextSection({
       </div>
     </section>
   );
-} 
+}
