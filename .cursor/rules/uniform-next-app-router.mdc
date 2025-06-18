@@ -4,10 +4,11 @@ globs:
 alwaysApply: false
 ---
 ---
-description: 
-globs: 
+description:
+globs:
 alwaysApply: false
 ---
+
 # Uniform React Next App Router Developer Reference
 
 This document details how to use Uniform with React.js with Next App Router.
@@ -171,6 +172,41 @@ export const HeaderComponent = ({ textParameter }: HeaderProps) => {
 };
 ```
 
+#### Accessing parameters
+
+IMPORTANT: When accessing component parameters, never use this way of accessing parameter values: `component?.parameters?.<parameter_name>.value`. While it works, there is a better way of destructuring the parameter name on props and accessing it directly as shown in the example below:
+
+```tsx
+import {
+  ComponentProps,
+  UniformText,
+} from "@uniformdev/canvas-next-rsc/component";
+
+import {
+  LinkParamValue,
+} from "@uniformdev/canvas";
+
+type ComponentParameters = {
+  icon?: string;
+  label?: string;
+  link?: LinkParamValue;
+};
+
+export const ComponentName = ({
+  link,
+  icon,
+  label,
+  component,
+  context,
+}: ComponentProps<ComponentParameters>) => {
+  return (
+    <a href={link.path} aria-label={label}>
+      {icon}
+    </a>
+  );
+};
+```
+
 #### Rendering child slots
 
 If a Uniform Component definition has slots defined, the components in those slots can be rendered using the `UniformSlot` component.
@@ -266,13 +302,11 @@ export const HeaderComponent = ({ component, context }: HeaderProps) => {
 
 Note: asset parameters are rendered directly from props, there is no `UniformAsset` component.
 
-
 ##### Asset parameters/fields
 
 1. CRITICAL: Always use `flattenValues` from `@uniformdev/canvas` for handling asset parameters, not custom utility functions.
 2. CRITICAL: Destructure asset parameters directly from component props (e.g., `{ logos, component, context }`) rather than accessing through `component?.parameters?.parameterName`.
 3. Use `flattenValues(assetParam)` directly - it handles both single and multiple assets automatically.
-
 
 ```tsx
 import { AssetParamValue, flattenValues } from "@uniformdev/canvas";
@@ -294,7 +328,12 @@ function MyComponent({
   return (
     <>
       {images?.map((img, index) => (
-        <img key={index} src={img?.url} width={img?.width} height={img?.height} />
+        <img
+          key={index}
+          src={img?.url}
+          width={img?.width}
+          height={img?.height}
+        />
       ))}
       <img src={image?.url} width={image?.width} height={image?.height} />
     </>
@@ -315,11 +354,11 @@ import {
   createPreviewGETRouteHandler,
   createPreviewPOSTRouteHandler,
   createPreviewOPTIONSRouteHandler,
-} from '@uniformdev/canvas-next-rsc/handler';
+} from "@uniformdev/canvas-next-rsc/handler";
 
 export const GET = createPreviewGETRouteHandler({
-  playgroundPath: '/playground',
-  resolveFullPath: ({ path }) => (path ? path : '/playground'),
+  playgroundPath: "/playground",
+  resolveFullPath: ({ path }) => (path ? path : "/playground"),
 });
 export const POST = createPreviewPOSTRouteHandler();
 export const OPTIONS = createPreviewOPTIONSRouteHandler();
@@ -341,4 +380,12 @@ export default function PlaygroundPage(props: {
 }) {
   return <UniformPlayground {...props} resolveComponent={resolveComponent} />;
 }
+```
+
+## Uniform manifest usage
+
+1. CRITICAL! If using Next.js App Router, you must ignore adding the following commands specific to Uniform manifest. This is for Next.js page router only.
+```bash
+  "uniform:manifest": "uniform context manifest download --output ./lib/uniform/contextManifest.json",
+  "uniform:publish": "uniform context manifest publish"
 ```

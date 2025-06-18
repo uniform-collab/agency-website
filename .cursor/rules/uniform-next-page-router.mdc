@@ -312,3 +312,10 @@ import { createUniformContext } from "../uniform/uniformContext";
     return await Document.getInitialProps(ctx);
   }
 ```
+
+CRITICAL! Ignore this if using Next.js app router. This is for page router only. When adding Uniform SDK only for Next.js page router, always add these npm scripts to package.json. Adapt the path to `contextManifest.json` as needed. Add `uniform:manifest` to the `dev` and `build` scripts so it is running before the dev server starts or before production build runs.
+
+```bash
+  "uniform:manifest": "uniform context manifest download --output ./lib/uniform/contextManifest.json",
+  "uniform:publish": "uniform context manifest publish"
+```
