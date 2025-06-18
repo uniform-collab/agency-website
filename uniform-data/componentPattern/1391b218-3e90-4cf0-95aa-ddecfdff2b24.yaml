@@ -1,0 +1,251 @@
+composition:
+  _name: Process Section
+  _id: 1391b218-3e90-4cf0-95aa-ddecfdff2b24
+  type: cardGridSection
+  parameters:
+    title:
+      type: text
+      value: Our Assembly Line
+    variant:
+      type: select
+      value: process
+    subtitle:
+      type: richText
+      value:
+        root:
+          type: root
+          format: ''
+          indent: 0
+          version: 1
+          children:
+            - type: paragraph
+              format: ''
+              indent: 0
+              version: 1
+              children:
+                - mode: normal
+                  text: >-
+                    Our structured process ensures quality, efficiency, and
+                    outstanding results at every stage.
+                  type: text
+                  style: ''
+                  detail: 0
+                  format: 0
+                  version: 1
+              direction: null
+              textStyle: ''
+              textFormat: 0
+          direction: null
+  slots:
+    cards:
+      - _id: 923289b9-20bb-4b34-94d8-71345983df82
+        type: processStep
+        parameters:
+          icon:
+            type: text
+            value: lightbulb
+          title:
+            type: text
+            value: Discovery & Strategy
+          iconColor:
+            type: text
+            value: text-purple-400
+          description:
+            type: richText
+            value:
+              root:
+                type: root
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - type: paragraph
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: >-
+                          We work closely with you to understand your goals and
+                          aspirations, then define a clear, actionable roadmap
+                          to guide your project toward success.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: null
+                    textStyle: ''
+                    textFormat: 0
+                direction: null
+      - _id: 5523ce7e-0377-46b8-9d4d-bc7febb59df8
+        type: processStep
+        parameters:
+          icon:
+            type: text
+            value: palette
+          title:
+            type: text
+            value: Design & Prototyping
+          iconColor:
+            type: text
+            value: text-teal-400
+          description:
+            type: richText
+            value:
+              root:
+                type: root
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - type: paragraph
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: >-
+                          Craft intuitive user interfaces and validate design
+                          concepts to ensure usability and effectiveness.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: null
+                    textStyle: ''
+                    textFormat: 0
+                direction: null
+      - _id: 89329b49-5091-4e4e-9f4d-080a13c78b78
+        type: processStep
+        parameters:
+          icon:
+            type: text
+            value: code
+          title:
+            type: text
+            value: Development & Integration
+          iconColor:
+            type: text
+            value: text-pink-400
+          description:
+            type: richText
+            value:
+              root:
+                type: root
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - type: paragraph
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: >-
+                          Build robust solutions by leveraging the latest
+                          advancements in technology, ensuring your projects are
+                          innovative, scalable, and future-ready.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: null
+                    textStyle: ''
+                    textFormat: 0
+                direction: null
+      - _id: 6c91fcae-1d07-4820-8ffd-372f175c10cb
+        type: processStep
+        parameters:
+          icon:
+            type: text
+            value: rocket
+          title:
+            type: text
+            value: Launch & Optimization
+          iconColor:
+            type: text
+            value: text-yellow-400
+          description:
+            type: richText
+            value:
+              root:
+                type: root
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - type: paragraph
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: >-
+                          Deploy your solution and fine-tune its settings to
+                          ensure optimal performance in real-world conditions.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: null
+                    textStyle: ''
+                    textFormat: 0
+                direction: null
+      - _id: cea2ddf0-d8ad-4041-a8d1-3d31b9f79bef
+        type: processStep
+        parameters:
+          icon:
+            type: text
+            value: TrendingUp
+          title:
+            type: text
+            value: Continuous Growth
+          iconColor:
+            type: text
+            value: text-green-400
+          description:
+            type: richText
+            value:
+              root:
+                type: root
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - type: paragraph
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: >-
+                          We work closely with you to ensure continuous
+                          improvement, adapting strategies to evolving market
+                          trends and maintaining your position as an industry
+                          leader.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: null
+                    textStyle: ''
+                    textFormat: 0
+                direction: null
+  _overridability:
+    parameters:
+      icon: 'yes'
+      title: 'yes'
+      variant: 'yes'
+      subtitle: 'yes'
+      iconColor: 'yes'
+      description: 'yes'
+    hideLockedParameters: true
+created: '2025-06-18T13:53:13.474721+00:00'
+modified: '2025-06-18T13:53:13.474721+00:00'
+pattern: true

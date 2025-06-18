@@ -1,0 +1,89 @@
+composition:
+  _name: Agency Hero
+  _id: 45f521ae-69a7-4d65-86ba-000c57a32bfe
+  type: heroSection
+  parameters:
+    title:
+      type: text
+      value: Create Your Next Digital Experience
+    subtitle:
+      type: richText
+      value:
+        root:
+          type: root
+          format: ''
+          indent: 0
+          version: 1
+          children:
+            - type: paragraph
+              format: ''
+              indent: 0
+              version: 1
+              children:
+                - mode: normal
+                  text: >-
+                    We build modern, responsive websites and applications that
+                    drive results. Transform your vision into reality with our
+                    expert development team.
+                  type: text
+                  style: ''
+                  detail: 0
+                  format: 0
+                  version: 1
+              direction: ltr
+              textStyle: ''
+              textFormat: 0
+          direction: null
+  slots:
+    buttons:
+      - _id: 67a28206-576b-4047-b310-f7ef8f412bb7
+        type: button
+        parameters:
+          link:
+            type: link
+            value:
+              path: '#contact'
+              type: url
+          text:
+            type: text
+            value: Get Started
+          variant:
+            type: select
+            value: primary
+        _overridability:
+          parameters:
+            $viz: 'yes'
+            link: 'yes'
+            text: 'yes'
+            variant: 'yes'
+      - _id: 24e9bc06-6e97-46b5-bb47-15eeea3aa229
+        type: button
+        parameters:
+          link:
+            type: link
+            value:
+              path: '#portfolio'
+              type: url
+          text:
+            type: text
+            value: View Our Work
+          variant:
+            type: select
+            value: outline
+        _overridability:
+          parameters:
+            $viz: 'yes'
+            link: 'yes'
+            text: 'yes'
+            variant: 'yes'
+  _overridability:
+    parameters:
+      link: 'yes'
+      text: 'yes'
+      title: 'yes'
+      variant: 'yes'
+      subtitle: 'yes'
+    hideLockedParameters: true
+created: '2025-06-18T13:26:30.856506+00:00'
+modified: '2025-06-18T13:28:56.817342+00:00'
+pattern: true

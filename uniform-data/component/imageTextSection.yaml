@@ -1,0 +1,49 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: imageTextSection
+name: Image Text Section
+icon: screen
+parameters:
+  - id: title
+    name: Title
+    type: text
+    guidance: Section heading
+    localizable: true
+  - id: content
+    name: Content
+    type: richText
+    guidance: Main text content with formatting
+    localizable: true
+  - id: image
+    name: Image
+    type: asset
+    guidance: Main section image
+    typeConfig:
+      allowedTypes:
+        - image
+  - id: variant
+    name: Layout
+    type: select
+    guidance: Image position relative to text
+    typeConfig:
+      options:
+        - text: Image Right
+          value: imageRight
+        - text: Image Left
+          value: imageLeft
+description: A section with image and text content, with configurable layout
+useTeamPermissions: true
+slots:
+  - id: features
+    name: Features
+    maxComponents: 5
+    minComponents: 0
+    allowedComponents:
+      - feature
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: true
+titleParameter: title
+thumbnailParameter: image
+canBeComposition: false
+created: '2025-06-18T13:31:25.096067+00:00'
+updated: '2025-06-18T13:31:25.096067+00:00'

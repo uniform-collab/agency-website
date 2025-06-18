@@ -1,0 +1,126 @@
+composition:
+  _name: Contact Form
+  _id: 0f0ce7e9-f3dc-4860-9a3c-c796c47b1c00
+  type: contactFormSection
+  parameters:
+    title:
+      type: text
+      value: Get In Touch
+    subtitle:
+      type: richText
+      value:
+        root:
+          type: root
+          format: ''
+          indent: 0
+          version: 1
+          children:
+            - type: paragraph
+              format: ''
+              indent: 0
+              version: 1
+              children:
+                - mode: normal
+                  text: >-
+                    Ready to start your next project? Contact us today and let's
+                    bring your vision to life.
+                  type: text
+                  style: ''
+                  detail: 0
+                  format: 0
+                  version: 1
+              direction: null
+              textStyle: ''
+              textFormat: 0
+          direction: null
+    submitButtonText:
+      type: text
+      value: Send Message
+  slots:
+    fields:
+      - _id: 12345678-1234-5678-9abc-123456789abc
+        type: formField
+        parameters:
+          name:
+            type: text
+            value: firstName
+          type:
+            type: select
+            value: text
+          label:
+            type: text
+            value: First Name
+          width:
+            type: select
+            value: half
+          required:
+            type: checkbox
+            value: 'true'
+      - _id: 12345678-1234-5678-9abc-123456789abd
+        type: formField
+        parameters:
+          name:
+            type: text
+            value: lastName
+          type:
+            type: select
+            value: text
+          label:
+            type: text
+            value: Last Name
+          width:
+            type: select
+            value: half
+          required:
+            type: checkbox
+            value: 'true'
+      - _id: 12345678-1234-5678-9abc-123456789abe
+        type: formField
+        parameters:
+          name:
+            type: text
+            value: email
+          type:
+            type: select
+            value: email
+          label:
+            type: text
+            value: Email Address
+          width:
+            type: select
+            value: full
+          required:
+            type: checkbox
+            value: 'true'
+      - _id: 12345678-1234-5678-9abc-123456789abf
+        type: formField
+        parameters:
+          name:
+            type: text
+            value: message
+          type:
+            type: select
+            value: textarea
+          label:
+            type: text
+            value: Message
+          width:
+            type: select
+            value: full
+          required:
+            type: checkbox
+            value: 'true'
+  _overridability:
+    parameters:
+      name: 'yes'
+      type: 'yes'
+      label: 'yes'
+      title: 'yes'
+      width: 'yes'
+      required: 'yes'
+      subtitle: 'yes'
+      submitButtonText: 'yes'
+    hideLockedParameters: true
+created: '2025-06-18T13:36:41.165392+00:00'
+modified: '2025-06-18T13:36:41.165392+00:00'
+pattern: true

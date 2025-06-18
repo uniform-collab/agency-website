@@ -1,0 +1,31 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: processStep
+name: Process Step
+icon: screen
+parameters:
+  - id: icon
+    name: Icon
+    type: text
+    guidance: Lucide icon name, e.g. 'lightbulb', 'code', 'rocket'
+  - id: iconColor
+    name: Icon Color
+    type: text
+    guidance: Tailwind CSS color class, e.g. 'text-blue-600'
+  - id: title
+    name: Title
+    type: text
+    guidance: Step name or title
+    localizable: true
+  - id: description
+    name: Description
+    type: richText
+    guidance: Step description
+    localizable: true
+description: A process step with icon, title, and description
+useTeamPermissions: true
+slots: []
+titleParameter: icon
+canBeComposition: false
+created: '2025-06-18T13:31:58.539417+00:00'
+updated: '2025-06-18T13:31:58.539417+00:00'

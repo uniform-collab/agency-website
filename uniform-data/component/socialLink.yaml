@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: socialLink
+name: Social Link
+icon: screen
+parameters:
+  - id: icon
+    name: Icon
+    type: text
+    guidance: Lucide icon name, e.g. 'Linkedin', 'Twitter', 'Github'
+  - id: link
+    name: Link
+    type: link
+    guidance: Social media URL
+    localizable: true
+  - id: label
+    name: Label
+    type: text
+    guidance: Accessibility label, e.g. 'LinkedIn Profile'
+    localizable: true
+description: A social media link with icon
+useTeamPermissions: true
+slots: []
+titleParameter: icon
+canBeComposition: false
+created: '2025-06-18T13:59:06.854904+00:00'
+updated: '2025-06-18T13:59:06.854904+00:00'

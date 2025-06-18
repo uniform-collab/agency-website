@@ -1,0 +1,35 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: button
+name: Button
+icon: screen
+parameters:
+  - id: text
+    name: Button Text
+    type: text
+    guidance: The text displayed on the button
+    localizable: true
+  - id: link
+    name: Link
+    type: link
+    guidance: Where the button should navigate to
+    localizable: true
+  - id: variant
+    name: Variant
+    type: select
+    guidance: The visual style of the button
+    typeConfig:
+      options:
+        - text: Primary
+          value: primary
+        - text: Secondary
+          value: secondary
+        - text: Outline
+          value: outline
+description: A customizable button component with different variants
+useTeamPermissions: true
+slots: []
+titleParameter: text
+canBeComposition: false
+created: '2025-06-18T13:23:03.993235+00:00'
+updated: '2025-06-18T13:23:03.993235+00:00'

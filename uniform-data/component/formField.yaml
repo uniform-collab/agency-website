@@ -1,0 +1,50 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: formField
+name: Form Field
+icon: screen
+parameters:
+  - id: name
+    name: Field Name
+    type: text
+    guidance: HTML name attribute, e.g. 'email', 'firstName'
+  - id: label
+    name: Label
+    type: text
+    guidance: Field label displayed to users
+    localizable: true
+  - id: type
+    name: Field Type
+    type: select
+    guidance: HTML input type
+    typeConfig:
+      options:
+        - text: Text
+          value: text
+        - text: Email
+          value: email
+        - text: Phone
+          value: tel
+        - text: Textarea
+          value: textarea
+  - id: required
+    name: Required
+    type: checkbox
+    guidance: Whether this field is required
+  - id: width
+    name: Width
+    type: select
+    guidance: Field width in the form grid
+    typeConfig:
+      options:
+        - text: Half Width
+          value: half
+        - text: Full Width
+          value: full
+description: A form input field with configurable type and validation
+useTeamPermissions: true
+slots: []
+titleParameter: name
+canBeComposition: false
+created: '2025-06-18T13:31:29.164772+00:00'
+updated: '2025-06-18T13:31:29.164772+00:00'

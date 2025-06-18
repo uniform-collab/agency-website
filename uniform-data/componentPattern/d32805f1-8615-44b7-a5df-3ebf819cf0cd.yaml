@@ -1,0 +1,67 @@
+composition:
+  _name: Main Footer
+  _id: d32805f1-8615-44b7-a5df-3ebf819cf0cd
+  type: footer
+  parameters:
+    brandIcon:
+      type: text
+      value: Atom
+    brandName:
+      type: text
+      value: Reactr Studios
+    copyrightText:
+      type: text
+      value: Reactr Studios. All rights reserved.
+  slots:
+    legalLinks:
+      - _id: dbcb3df3-ea84-4427-8bfc-484111d077c1
+        type: legalLink
+        parameters:
+          label:
+            type: text
+            value: Privacy Policy
+      - _id: a535d62c-8252-42b1-857e-cca05eba27c6
+        type: legalLink
+        parameters:
+          label:
+            type: text
+            value: Terms of Service
+    socialLinks:
+      - _id: 86b78c9b-339e-431a-af7d-473ffbb62361
+        type: socialLink
+        parameters:
+          icon:
+            type: text
+            value: Linkedin
+          label:
+            type: text
+            value: LinkedIn
+      - _id: ed273928-6a68-49e1-8de4-b75501779cc5
+        type: socialLink
+        parameters:
+          icon:
+            type: text
+            value: Twitter
+          label:
+            type: text
+            value: Twitter
+      - _id: 2d9b2bc6-8d53-4651-aca8-556ea2054628
+        type: socialLink
+        parameters:
+          icon:
+            type: text
+            value: Github
+          label:
+            type: text
+            value: GitHub
+  _overridability:
+    parameters:
+      icon: 'yes'
+      label: 'yes'
+      brandIcon: 'yes'
+      brandName: 'yes'
+      copyrightText: 'yes'
+    hideLockedParameters: true
+created: '2025-06-18T14:36:57.013717+00:00'
+modified: '2025-06-18T14:36:57.013717+00:00'
+pattern: true

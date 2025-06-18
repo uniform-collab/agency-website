@@ -1,0 +1,300 @@
+composition:
+  _name: Services Section
+  _id: 43a3571d-fa65-437f-a166-4eed7af86d20
+  type: cardGridSection
+  parameters:
+    title:
+      type: text
+      value: Our Core Schematics
+    variant:
+      type: select
+      value: services
+    subtitle:
+      type: richText
+      value:
+        root:
+          type: root
+          format: ''
+          indent: 0
+          version: 1
+          children:
+            - type: paragraph
+              format: ''
+              indent: 0
+              version: 1
+              children:
+                - mode: normal
+                  text: >-
+                    A full suite of services to architect, construct, and refine
+                    your Digital Experience Platform.
+                  type: text
+                  style: ''
+                  detail: 0
+                  format: 0
+                  version: 1
+              direction: null
+              textStyle: ''
+              textFormat: 0
+          direction: null
+  slots:
+    cards:
+      - _id: 2df7208e-3cae-4c42-bcad-d5fed55614b2
+        type: serviceCard
+        parameters:
+          icon:
+            type: text
+            value: search
+          title:
+            type: text
+            value: DXP Strategy & Consulting
+          iconColor:
+            type: text
+            value: text-purple-400
+          description:
+            type: richText
+            value:
+              root:
+                type: root
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - type: paragraph
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: >-
+                          We design tailored Digital Experience Platform (DXP)
+                          roadmaps that align with your unique business
+                          objectives, ensuring maximum impact and return on
+                          investment (ROI).
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: null
+                    textStyle: ''
+                    textFormat: 0
+                direction: null
+      - _id: d1622cf7-af43-4361-897b-cb47673f45f9
+        type: serviceCard
+        parameters:
+          icon:
+            type: text
+            value: layers
+          title:
+            type: text
+            value: Platform Implementation
+          iconColor:
+            type: text
+            value: text-teal-400
+          description:
+            type: richText
+            value:
+              root:
+                type: root
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - type: paragraph
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: >-
+                          We provide expert integration and customization of top
+                          Digital Experience Platform (DXP) solutions, ensuring
+                          they are tailored to fit your organization's specific
+                          requirements and deliver a seamless user experience.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: null
+                    textStyle: ''
+                    textFormat: 0
+                direction: null
+      - _id: ea1fadaa-7249-4827-95b6-c3aabaf466b4
+        type: serviceCard
+        parameters:
+          icon:
+            type: text
+            value: palette
+          title:
+            type: text
+            value: Experience Design (UX/UI)
+          iconColor:
+            type: text
+            value: text-pink-400
+          description:
+            type: richText
+            value:
+              root:
+                type: root
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - type: paragraph
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: >-
+                          We craft intuitive, engaging, and visually stunning
+                          user experiences that not only captivate your audience
+                          but also drive conversions. Our design approach
+                          combines creativity with usability, ensuring every
+                          interaction feels seamless and impactful.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: null
+                    textStyle: ''
+                    textFormat: 0
+                direction: null
+      - _id: 8c9a4f0d-3c15-4e95-968a-ad9e6e974b95
+        type: serviceCard
+        parameters:
+          icon:
+            type: text
+            value: zap
+          title:
+            type: text
+            value: Personalization & Optimization
+          iconColor:
+            type: text
+            value: text-yellow-400
+          description:
+            type: richText
+            value:
+              root:
+                type: root
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - type: paragraph
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: >-
+                          Harness the power of data to deliver
+                          hyper-personalized content tailored to each user,
+                          while continuously optimizing strategies to maximize
+                          performance and engagement.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: null
+                    textStyle: ''
+                    textFormat: 0
+                direction: null
+      - _id: d9fb62ff-9ee5-49a7-a6e3-fb580acb92c0
+        type: serviceCard
+        parameters:
+          icon:
+            type: text
+            value: BarChart
+          title:
+            type: text
+            value: Analytics & Performance
+          iconColor:
+            type: text
+            value: text-green-400
+          description:
+            type: richText
+            value:
+              root:
+                type: root
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - type: paragraph
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: >-
+                          Gain a comprehensive understanding of your performance
+                          with in-depth tracking and analysis. We measure key
+                          metrics to evaluate success and uncover actionable
+                          insights, empowering you to make data-driven decisions
+                          and accelerate growth.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: null
+                    textStyle: ''
+                    textFormat: 0
+                direction: null
+      - _id: 84569479-bf07-4bd6-b8c2-e0a52a604628
+        type: serviceCard
+        parameters:
+          icon:
+            type: text
+            value: ShieldCheck
+          title:
+            type: text
+            value: Support & Managed Services
+          iconColor:
+            type: text
+            value: text-sky-400
+          description:
+            type: richText
+            value:
+              root:
+                type: root
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - type: paragraph
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: >-
+                          Receive continuous support and proactive management to
+                          keep your Digital Experience Platform (DXP) running
+                          smoothly, adapting and scaling as your business grows
+                          and changes.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: null
+                    textStyle: ''
+                    textFormat: 0
+                direction: null
+  _overridability:
+    parameters:
+      icon: 'yes'
+      title: 'yes'
+      variant: 'yes'
+      subtitle: 'yes'
+      iconColor: 'yes'
+      description: 'yes'
+    hideLockedParameters: true
+created: '2025-06-18T13:50:54.453975+00:00'
+modified: '2025-06-18T13:50:54.453975+00:00'
+pattern: true

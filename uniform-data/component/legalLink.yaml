@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: legalLink
+name: Legal Link
+icon: screen
+parameters:
+  - id: label
+    name: Label
+    type: text
+    guidance: Link text, e.g. 'Privacy Policy', 'Terms of Service'
+    localizable: true
+  - id: link
+    name: Link
+    type: link
+    guidance: Legal document URL
+    localizable: true
+description: A footer legal/policy link
+useTeamPermissions: true
+slots: []
+titleParameter: label
+canBeComposition: false
+created: '2025-06-18T13:59:13.650552+00:00'
+updated: '2025-06-18T13:59:13.650552+00:00'

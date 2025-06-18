@@ -1,0 +1,45 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: cardGridSection
+name: Card Grid Section
+icon: screen
+parameters:
+  - id: title
+    name: Title
+    type: text
+    guidance: Section heading
+    localizable: true
+  - id: subtitle
+    name: Subtitle
+    type: richText
+    guidance: Supporting text below the title
+    localizable: true
+  - id: variant
+    name: Variant
+    type: select
+    guidance: Grid layout and styling variant
+    typeConfig:
+      options:
+        - text: Services
+          value: services
+        - text: Portfolio
+          value: portfolio
+        - text: Process
+          value: process
+description: A flexible grid section for displaying services, projects, or process steps
+useTeamPermissions: true
+slots:
+  - id: cards
+    name: Cards
+    maxComponents: 12
+    minComponents: 1
+    allowedComponents:
+      - serviceCard
+      - projectCard
+      - processStep
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: true
+titleParameter: title
+canBeComposition: false
+created: '2025-06-18T13:32:05.485579+00:00'
+updated: '2025-06-18T13:32:05.485579+00:00'

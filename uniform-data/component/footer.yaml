@@ -1,0 +1,43 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: footer
+name: Footer
+icon: screen
+parameters:
+  - id: brandName
+    name: Brand Name
+    type: text
+    guidance: Company or site name
+    localizable: true
+  - id: brandIcon
+    name: Brand Icon
+    type: text
+    guidance: Lucide icon name for brand logo, e.g. 'Atom'
+  - id: copyrightText
+    name: Copyright Text
+    type: text
+    guidance: Copyright notice, e.g. 'Reactr Studios. All rights reserved.'
+    localizable: true
+description: Site footer with brand, copyright, social links, and legal links
+useTeamPermissions: true
+slots:
+  - id: socialLinks
+    name: Social Links
+    maxComponents: 6
+    minComponents: 0
+    allowedComponents:
+      - socialLink
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: true
+  - id: legalLinks
+    name: Legal Links
+    maxComponents: 6
+    minComponents: 0
+    allowedComponents:
+      - legalLink
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: true
+titleParameter: brandName
+canBeComposition: false
+created: '2025-06-18T13:59:32.102535+00:00'
+updated: '2025-06-18T13:59:32.102535+00:00'

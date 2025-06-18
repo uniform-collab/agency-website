@@ -1,0 +1,91 @@
+composition:
+  _name: About Section
+  _id: 74da4848-c134-4c05-b0cc-9cb4a83f4be3
+  type: imageTextSection
+  parameters:
+    title:
+      type: text
+      value: We Are Reactr Studios
+    content:
+      type: richText
+      value:
+        root:
+          type: root
+          format: ''
+          indent: 0
+          version: 1
+          children:
+            - type: paragraph
+              format: ''
+              indent: 0
+              version: 1
+              children:
+                - mode: normal
+                  text: >-
+                    At Reactr Studios, we believe exceptional digital platforms
+                    are crafted with intention and expertise. Our approach
+                    blends thoughtful strategy, seamless design, and
+                    cutting-edge technology to deliver experiences that are both
+                    impactful and refined.
+                  type: text
+                  style: ''
+                  detail: 0
+                  format: 0
+                  version: 1
+              direction: null
+              textStyle: ''
+              textFormat: 0
+            - type: paragraph
+              format: ''
+              indent: 0
+              version: 1
+              children:
+                - mode: normal
+                  text: >-
+                    As your innovation partners, we are committed to engineering
+                    digital solutions that endure, inspire, and set new
+                    standards for market leadership.
+                  type: text
+                  style: ''
+                  detail: 0
+                  format: 0
+                  version: 1
+              direction: null
+              textStyle: ''
+              textFormat: 0
+          direction: null
+    variant:
+      type: select
+      value: imageRight
+  slots:
+    features:
+      - _id: 497c110d-4bd8-46be-a322-2c226ea14747
+        type: feature
+        parameters:
+          icon:
+            type: text
+            value: brain
+          label:
+            type: text
+            value: Precision Strategy
+      - _id: a02ef85b-13c6-4ca4-b7f4-8e9dffe90d27
+        type: feature
+        parameters:
+          icon:
+            type: text
+            value: award
+          label:
+            type: text
+            value: Engineered Excellence
+  _overridability:
+    parameters:
+      icon: 'yes'
+      image: 'yes'
+      label: 'yes'
+      title: 'yes'
+      content: 'yes'
+      variant: 'yes'
+    hideLockedParameters: true
+created: '2025-06-18T13:45:15.902363+00:00'
+modified: '2025-06-18T13:46:05.817827+00:00'
+pattern: true

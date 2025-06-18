@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: contactFormSection
+name: Contact Form Section
+icon: screen
+parameters:
+  - id: title
+    name: Title
+    type: text
+    guidance: Section heading
+    localizable: true
+  - id: subtitle
+    name: Subtitle
+    type: richText
+    guidance: Supporting text below the title
+    localizable: true
+  - id: submitButtonText
+    name: Submit Button Text
+    type: text
+    guidance: Text for the form submit button
+    localizable: true
+description: A contact form section with customizable fields and styling
+useTeamPermissions: true
+slots:
+  - id: fields
+    name: Form Fields
+    maxComponents: 10
+    minComponents: 1
+    allowedComponents:
+      - formField
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: true
+titleParameter: title
+canBeComposition: false
+created: '2025-06-18T13:31:33.575452+00:00'
+updated: '2025-06-18T13:31:33.575452+00:00'

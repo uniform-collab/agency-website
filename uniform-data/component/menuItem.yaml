@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: menuItem
+name: Menu Item
+icon: screen
+parameters:
+  - id: label
+    name: Label
+    type: text
+    guidance: Menu item text, e.g. 'About', 'Services'
+    localizable: true
+  - id: link
+    name: Link
+    type: link
+    guidance: Navigation destination
+    localizable: true
+description: A navigation menu item with label and link
+useTeamPermissions: true
+slots: []
+titleParameter: label
+canBeComposition: false
+created: '2025-06-18T13:58:58.838196+00:00'
+updated: '2025-06-18T13:58:58.838196+00:00'

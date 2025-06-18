@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: 20e1a421-0911-40e1-b6e5-67ee3f4073e6
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: logoipsum-372.svg
+    file:
+      type: file
+      value: e2958f2a-b7e6-4c63-975e-3b42ce1b41e0
+    mediaType:
+      value: image/svg+xml
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/xngGvKB-RlqBx3UPUOguDQ/GQxtYY1oS0SYCEK2HGg0kw-logoipsum-372.svg
+      type: text
+    size:
+      value: 5223
+      type: number
+    width:
+      value: 209
+      type: number
+    height:
+      value: 40
+      type: number
+    custom: {}
+created: '2025-06-18T12:22:21.091611+00:00'
+modified: '2025-06-18T12:22:21.091611+00:00'

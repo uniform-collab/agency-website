@@ -1,0 +1,10 @@
+composition:
+  _name: Process Step pattern
+  _id: 51184c3c-3abf-4e7f-9c37-2d325607f76a
+  type: processStep
+  parameters: {}
+  _overridability:
+    hideLockedParameters: true
+created: '2025-06-18T13:49:50.25039+00:00'
+modified: '2025-06-18T13:49:50.25039+00:00'
+pattern: true

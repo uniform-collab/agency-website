@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: marqueeSection
+name: Marquee Section
+icon: screen
+parameters:
+  - id: title
+    name: Title
+    type: text
+    guidance: Title text above the marquee, e.g. 'Trusted by leading companies'
+    localizable: true
+  - id: logos
+    name: Client Logos
+    type: asset
+    guidance: Upload multiple client/partner logo images
+    typeConfig:
+      max: 20
+      min: 1
+      isMulti: true
+      allowedTypes:
+        - image
+description: A scrolling marquee section displaying client logos or partner brands
+useTeamPermissions: true
+slots: []
+titleParameter: title
+canBeComposition: false
+created: '2025-06-18T13:31:14.069404+00:00'
+updated: '2025-06-18T13:40:01.836309+00:00'

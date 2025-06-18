@@ -1,0 +1,134 @@
+composition:
+  _name: Client Marquee
+  _id: ce8d7aac-66a6-4ca3-add1-9954f2154462
+  type: marqueeSection
+  parameters:
+    logos:
+      type: asset
+      value:
+        - _id: 87978d19-1f69-40e9-abb5-8de331187f39
+          type: image
+          fields:
+            id:
+              type: text
+              value: 581e0b58-3443-49ce-a43a-6ae740ca99fa
+            url:
+              value: >-
+                https://img.uniform.global/p/xngGvKB-RlqBx3UPUOguDQ/CBy42DKCR7e1aSGbU2QxEA-logoipsum-377.svg
+              type: text
+            file:
+              type: file
+              value: 5d1bf971-91e2-4a57-a545-74ff98551d99
+            size:
+              value: 1033
+              type: number
+            title:
+              type: text
+              value: logoipsum-377.svg
+            width:
+              value: 59
+              type: number
+            height:
+              value: 38
+              type: number
+            mediaType:
+              value: image/svg+xml
+              type: text
+          _source: uniform-assets
+        - _id: 2bd64c26-cbe5-4089-8a27-f0c71209f67c
+          type: image
+          fields:
+            id:
+              type: text
+              value: 20e1a421-0911-40e1-b6e5-67ee3f4073e6
+            url:
+              value: >-
+                https://img.uniform.global/p/xngGvKB-RlqBx3UPUOguDQ/GQxtYY1oS0SYCEK2HGg0kw-logoipsum-372.svg
+              type: text
+            file:
+              type: file
+              value: e2958f2a-b7e6-4c63-975e-3b42ce1b41e0
+            size:
+              value: 5223
+              type: number
+            title:
+              type: text
+              value: logoipsum-372.svg
+            width:
+              value: 209
+              type: number
+            height:
+              value: 40
+              type: number
+            mediaType:
+              value: image/svg+xml
+              type: text
+          _source: uniform-assets
+        - _id: 8f25efd6-4db9-4fba-820d-825df1ac5169
+          type: image
+          fields:
+            id:
+              type: text
+              value: 787bec88-ab0d-4c35-83e7-7ea9d084e1f0
+            url:
+              value: >-
+                https://img.uniform.global/p/xngGvKB-RlqBx3UPUOguDQ/Ks5SOGKiTTibXKnVEjiwsw-logoipsum-378.svg
+              type: text
+            file:
+              type: file
+              value: 8733eb06-82fe-49c6-8b65-c428eef480c8
+            size:
+              value: 25541
+              type: number
+            title:
+              type: text
+              value: logoipsum-378.svg
+            width:
+              value: 139
+              type: number
+            height:
+              value: 62
+              type: number
+            mediaType:
+              value: image/svg+xml
+              type: text
+          _source: uniform-assets
+        - _id: d1c61f83-eed5-4c4a-ade3-9680f62d9403
+          type: image
+          fields:
+            id:
+              type: text
+              value: 787bec88-ab0d-4c35-83e7-7ea9d084e1f0
+            url:
+              value: >-
+                https://img.uniform.global/p/xngGvKB-RlqBx3UPUOguDQ/Ks5SOGKiTTibXKnVEjiwsw-logoipsum-378.svg
+              type: text
+            file:
+              type: file
+              value: 8733eb06-82fe-49c6-8b65-c428eef480c8
+            size:
+              value: 25541
+              type: number
+            title:
+              type: text
+              value: logoipsum-378.svg
+            width:
+              value: 139
+              type: number
+            height:
+              value: 62
+              type: number
+            mediaType:
+              value: image/svg+xml
+              type: text
+          _source: uniform-assets
+    title:
+      type: text
+      value: Trusted by leading companies worldwide
+  _overridability:
+    parameters:
+      title: 'yes'
+    hideLockedParameters: true
+created: '2025-06-18T13:36:20.277321+00:00'
+modified: '2025-06-18T13:43:26.461928+00:00'
+pattern: true

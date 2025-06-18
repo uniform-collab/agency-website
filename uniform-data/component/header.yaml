@@ -1,0 +1,38 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: header
+name: Header
+icon: screen
+parameters:
+  - id: brandName
+    name: Brand Name
+    type: text
+    guidance: Company or site name
+    localizable: true
+  - id: brandIcon
+    name: Brand Icon
+    type: text
+    guidance: Lucide icon name for brand logo, e.g. 'Atom'
+description: Site header with brand, navigation menu, and CTA button
+useTeamPermissions: true
+slots:
+  - id: menuItems
+    name: Menu Items
+    maxComponents: 8
+    minComponents: 0
+    allowedComponents:
+      - menuItem
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: true
+  - id: ctaButton
+    name: CTA Button
+    maxComponents: 1
+    minComponents: 0
+    allowedComponents:
+      - button
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: true
+titleParameter: brandName
+canBeComposition: false
+created: '2025-06-18T13:59:22.763291+00:00'
+updated: '2025-06-18T13:59:22.763291+00:00'

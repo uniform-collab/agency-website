@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: 1544ae5e-374f-460b-b1da-821c887e1f2e
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: agency-1.png
+    file:
+      type: file
+      value: 6f93916d-d71d-4397-b78b-d02a177445bc
+    mediaType:
+      value: image/png
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/xngGvKB-RlqBx3UPUOguDQ/gA4sz3b5R0O1kmE5ZDFrgA-agency-1.png
+      type: text
+    size:
+      value: 3020558
+      type: number
+    width:
+      value: 1536
+      type: number
+    height:
+      value: 1024
+      type: number
+    custom: {}
+created: '2025-06-18T12:22:33.857624+00:00'
+modified: '2025-06-18T12:22:33.857624+00:00'

@@ -1,0 +1,189 @@
+composition:
+  _name: Portfolio Section
+  _id: 181550b9-8ab8-4872-8692-fee1fba30e9b
+  type: cardGridSection
+  parameters:
+    title:
+      type: text
+      value: Case Studies in Metal
+    variant:
+      type: select
+      value: portfolio
+    subtitle:
+      type: richText
+      value:
+        root:
+          type: root
+          format: ''
+          indent: 0
+          version: 1
+          children:
+            - type: paragraph
+              format: ''
+              indent: 0
+              version: 1
+              children:
+                - mode: normal
+                  text: >-
+                    Discover how our innovative DXP solutions have empowered
+                    clients to achieve their digital transformation goals.
+                  type: text
+                  style: ''
+                  detail: 0
+                  format: 0
+                  version: 1
+              direction: null
+              textStyle: ''
+              textFormat: 0
+          direction: null
+  slots:
+    cards:
+      - _id: 61117b37-5c33-4232-880d-31fb8cf52f88
+        type: projectCard
+        parameters:
+          tags:
+            type: text
+            value: DXP, Personalization, UX/UI
+          title:
+            type: text
+            value: 'Project Alpha: E-commerce Revolution'
+          description:
+            type: richText
+            value:
+              root:
+                type: root
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - type: paragraph
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: >-
+                          Transformed a legacy e-commerce platform into a
+                          dynamic, personalized shopping experience by
+                          implementing modern UI/UX design, advanced
+                          recommendation algorithms, and real-time user
+                          analytics. These enhancements resulted in a 40%
+                          increase in conversion rates and significantly
+                          improved customer engagement.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: null
+                    textStyle: ''
+                    textFormat: 0
+                direction: null
+        _overridability:
+          parameters:
+            $viz: 'yes'
+            tags: 'yes'
+            image: 'yes'
+            title: 'yes'
+            description: 'yes'
+      - _id: c98dcb5c-4c96-4078-b113-cfde6415ad7c
+        type: projectCard
+        parameters:
+          tags:
+            type: text
+            value: CMS, Integration, Global Scale
+          title:
+            type: text
+            value: 'Project Beta: Global Content Hub'
+          description:
+            type: richText
+            value:
+              root:
+                type: root
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - type: paragraph
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: >-
+                          Led the launch of a unified content platform for a
+                          multinational corporation, consolidating disparate
+                          content systems into a single, scalable solution. This
+                          initiative streamlined global operations, improved
+                          collaboration across teams, and ensured consistent
+                          brand messaging in all markets.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: null
+                    textStyle: ''
+                    textFormat: 0
+                direction: null
+        _overridability:
+          parameters:
+            $viz: 'yes'
+            tags: 'yes'
+            image: 'yes'
+            title: 'yes'
+            description: 'yes'
+      - _id: d71eea5c-ab92-4824-b11f-c9729071d519
+        type: projectCard
+        parameters:
+          tags:
+            type: text
+            value: Mobile DXP, User Engagement, API First
+          title:
+            type: text
+            value: 'Project Gamma: Mobile-First Engagement'
+          description:
+            type: richText
+            value:
+              root:
+                type: root
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - type: paragraph
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: >-
+                          Developed an award-winning mobile Digital Experience
+                          Platform (DXP) solution that significantly increased
+                          user engagement and loyalty for a leading service
+                          provider. The platform integrated personalized content
+                          delivery, seamless user journeys, and robust
+                          analytics, resulting in measurable improvements in
+                          customer retention and satisfaction.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: null
+                    textStyle: ''
+                    textFormat: 0
+                direction: null
+        _overridability:
+          hideLockedParameters: true
+  _overridability:
+    parameters:
+      tags: 'yes'
+      title: 'yes'
+      variant: 'yes'
+      subtitle: 'yes'
+      description: 'yes'
+    hideLockedParameters: true
+created: '2025-06-18T13:51:48.961584+00:00'
+modified: '2025-06-18T14:42:51.272874+00:00'
+pattern: true

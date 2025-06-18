@@ -1,0 +1,125 @@
+composition:
+  _name: Home
+  _id: 26667348-5cd1-4185-b5a0-8413e1e87117
+  _slug: /
+  type: page
+  parameters:
+    metaTitle:
+      type: text
+      value: Home
+  slots:
+    footer:
+      - _id: e78ab8a6-8494-4fd6-944d-0b371533436f
+        type: footer
+        _pattern: d32805f1-8615-44b7-a5df-3ebf819cf0cd
+    header:
+      - _id: be08802a-d40c-498d-9631-5956a159c516
+        type: header
+        _pattern: 024ce685-f506-4abc-a66d-2c1f3c44df54
+    content:
+      - _id: 496f6f97-2106-4b63-aaff-b363b0d7273b
+        type: heroSection
+        _pattern: 45f521ae-69a7-4d65-86ba-000c57a32bfe
+      - _id: a319615c-b0b4-43ab-a9bd-f015441694cf
+        type: marqueeSection
+        _pattern: ce8d7aac-66a6-4ca3-add1-9954f2154462
+      - _id: 27e2dfc8-0b0e-4eb7-bf1e-d095c63e0eb3
+        type: imageTextSection
+        _pattern: 74da4848-c134-4c05-b0cc-9cb4a83f4be3
+      - _id: 5fc23e2d-c779-4290-9757-cc3112254669
+        type: imageTextSection
+        _pattern: 99787774-e596-4368-9a32-06cfba12bc0e
+      - _id: 184a3cfa-b140-4bb6-8c86-e7a2a323ebe2
+        type: cardGridSection
+        _pattern: 181550b9-8ab8-4872-8692-fee1fba30e9b
+      - _id: bae2a9ab-b59f-4627-b358-4cccd7fde0e6
+        type: cardGridSection
+        _pattern: 43a3571d-fa65-437f-a166-4eed7af86d20
+      - _id: 9a0d1915-2c90-4e9e-8b92-c78d71a10eee
+        type: cardGridSection
+        _pattern: 1391b218-3e90-4cf0-95aa-ddecfdff2b24
+      - _id: 00e4f012-3dff-4b0f-a3de-0e6587dabdb2
+        type: contactFormSection
+        _pattern: 0f0ce7e9-f3dc-4860-9a3c-c796c47b1c00
+  _overrides:
+    27e2dfc8-0b0e-4eb7-bf1e-d095c63e0eb3:
+      parameters:
+        image:
+          type: asset
+          value:
+            - _id: 32796f56-768d-4ffd-a0ac-9b6f27bbaabf
+              type: image
+              fields:
+                id:
+                  type: text
+                  value: 1544ae5e-374f-460b-b1da-821c887e1f2e
+                url:
+                  value: >-
+                    https://img.uniform.global/p/xngGvKB-RlqBx3UPUOguDQ/gA4sz3b5R0O1kmE5ZDFrgA-agency-1.png
+                  type: text
+                file:
+                  type: file
+                  value: 6f93916d-d71d-4397-b78b-d02a177445bc
+                size:
+                  value: 3020558
+                  type: number
+                title:
+                  type: text
+                  value: agency-1.png
+                width:
+                  value: 1536
+                  type: number
+                height:
+                  value: 1024
+                  type: number
+                mediaType:
+                  value: image/png
+                  type: text
+              _source: uniform-assets
+    496f6f97-2106-4b63-aaff-b363b0d7273b:
+      parameters:
+        title:
+          type: text
+          value: Create Your Next Digital Experience
+    5fc23e2d-c779-4290-9757-cc3112254669:
+      parameters:
+        image:
+          type: asset
+          value:
+            - _id: 4cfac516-2c23-45dc-b36f-ce3217d69515
+              type: image
+              fields:
+                id:
+                  type: text
+                  value: d419a165-c0e1-4982-871b-f66fef0694d5
+                url:
+                  value: >-
+                    https://img.uniform.global/p/xngGvKB-RlqBx3UPUOguDQ/3vCzvUriSSanSfHlv1S7IA-agency-2.png
+                  type: text
+                file:
+                  type: file
+                  value: 0bd290e5-7f9f-46ac-a10d-e3a9780a521a
+                size:
+                  value: 1817919
+                  type: number
+                title:
+                  type: text
+                  value: agency-2.png
+                width:
+                  value: 1024
+                  type: number
+                height:
+                  value: 1024
+                  type: number
+                mediaType:
+                  value: image/png
+                  type: text
+              _source: uniform-assets
+    496f6f97-2106-4b63-aaff-b363b0d7273b|67a28206-576b-4047-b310-f7ef8f412bb7:
+      parameters:
+        variant:
+          type: select
+          value: primary
+created: '2025-06-18T12:21:56.973086+00:00'
+modified: '2025-06-18T14:42:19.357058+00:00'
+pattern: false

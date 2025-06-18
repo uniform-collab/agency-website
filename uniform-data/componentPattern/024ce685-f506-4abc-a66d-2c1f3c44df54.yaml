@@ -1,0 +1,70 @@
+composition:
+  _name: Main Header
+  _id: 024ce685-f506-4abc-a66d-2c1f3c44df54
+  type: header
+  parameters:
+    brandIcon:
+      type: text
+      value: Atom
+    brandName:
+      type: text
+      value: Reactr Studios
+  slots:
+    ctaButton:
+      - _id: 56bfd2e7-91c9-4531-9790-4829d8235237
+        type: button
+        parameters:
+          text:
+            type: text
+            value: Get a Quote
+          variant:
+            type: select
+            value: primary
+    menuItems:
+      - _id: c98a8f21-ef00-4586-be0a-f08405eac469
+        type: menuItem
+        parameters:
+          label:
+            type: text
+            value: About
+      - _id: 85297aff-aafc-4b35-a1e0-d4cf4c3add03
+        type: menuItem
+        parameters:
+          label:
+            type: text
+            value: Mission
+      - _id: 4cd2cc8e-6fc1-4e53-b234-623dfac3cb74
+        type: menuItem
+        parameters:
+          label:
+            type: text
+            value: Services
+      - _id: df60b793-6d27-4245-b4a2-c15b0bd55cb1
+        type: menuItem
+        parameters:
+          label:
+            type: text
+            value: Work
+      - _id: 850421d2-3047-42b9-9549-0870a67a5cdb
+        type: menuItem
+        parameters:
+          label:
+            type: text
+            value: Process
+      - _id: cea5e37e-5688-4428-a02a-200f0eda503c
+        type: menuItem
+        parameters:
+          label:
+            type: text
+            value: Contact
+  _overridability:
+    parameters:
+      text: 'yes'
+      label: 'yes'
+      variant: 'yes'
+      brandIcon: 'yes'
+      brandName: 'yes'
+    hideLockedParameters: true
+created: '2025-06-18T14:35:19.420024+00:00'
+modified: '2025-06-18T14:35:19.420024+00:00'
+pattern: true

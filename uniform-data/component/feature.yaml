@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: feature
+name: Feature
+icon: screen
+parameters:
+  - id: icon
+    name: Icon
+    type: text
+    guidance: Lucide icon name, e.g. 'check', 'star', 'zap'
+  - id: label
+    name: Label
+    type: text
+    guidance: Feature description or benefit text
+    localizable: true
+description: A feature item with icon and label for use in feature lists
+useTeamPermissions: true
+slots: []
+titleParameter: icon
+canBeComposition: false
+created: '2025-06-18T13:31:16.949989+00:00'
+updated: '2025-06-18T13:31:16.949989+00:00'

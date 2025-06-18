@@ -1,0 +1,31 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: heroSection
+name: Hero Section
+icon: screen
+parameters:
+  - id: title
+    name: Title
+    type: text
+    guidance: Main hero title with engaging copy
+    localizable: true
+  - id: subtitle
+    name: Subtitle
+    type: richText
+    guidance: Supporting description text with formatting options
+    localizable: true
+description: A hero section with title, rich text subtitle, and button components
+useTeamPermissions: true
+slots:
+  - id: buttons
+    name: Buttons
+    maxComponents: 3
+    minComponents: 0
+    allowedComponents:
+      - button
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: true
+titleParameter: title
+canBeComposition: false
+created: '2025-06-18T13:23:33.630709+00:00'
+updated: '2025-06-18T13:23:33.630709+00:00'

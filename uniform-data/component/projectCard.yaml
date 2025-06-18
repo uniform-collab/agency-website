@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: projectCard
+name: Project Card
+icon: screen
+parameters:
+  - id: image
+    name: Image
+    type: asset
+    guidance: Project image or screenshot
+    typeConfig:
+      allowedTypes:
+        - image
+  - id: title
+    name: Title
+    type: text
+    guidance: Project name
+    localizable: true
+  - id: description
+    name: Description
+    type: richText
+    guidance: Project description
+    localizable: true
+  - id: tags
+    name: Tags
+    type: text
+    guidance: Comma-separated tags, e.g. 'React, TypeScript, API'
+    localizable: true
+description: A portfolio project card with image, title, description, and tags
+useTeamPermissions: true
+slots: []
+titleParameter: title
+thumbnailParameter: image
+canBeComposition: false
+created: '2025-06-18T13:31:56.156313+00:00'
+updated: '2025-06-18T13:31:56.156313+00:00'
