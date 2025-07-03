@@ -1,0 +1,129 @@
+composition:
+  _name: Mission Section - Our Core Catalyst
+  _id: 923a1e22-4d9e-4984-96e2-2a4f08ec0a92
+  type: imageTextSection
+  parameters:
+    image:
+      type: asset
+      value:
+        - _id: 205cfcb7-02d0-4d08-a697-9917e594a98a
+          type: image
+          fields:
+            id:
+              type: text
+              value: ff60dd67-f86c-46ba-b1a5-6494014fb386
+            url:
+              value: >-
+                https://img.uniform.global/p/9kmPXrqZQmetsyByGu6UQg/jyauddUkT4qyOax-UTd5sg-image.png
+              type: text
+            file:
+              type: file
+              value: 2ba8d9f2-9fea-4754-87a3-fd4e827331ef
+            size:
+              value: 868377
+              type: number
+            title:
+              type: text
+              value: image.png
+            width:
+              value: 1132
+              type: number
+            height:
+              value: 750
+              type: number
+            mediaType:
+              value: image/png
+              type: text
+          _source: uniform-assets
+    title:
+      type: text
+      value: Our Core Catalyst
+    content:
+      type: richText
+      value:
+        root:
+          type: root
+          format: ''
+          indent: 0
+          version: 1
+          children:
+            - type: paragraph
+              format: ''
+              indent: 0
+              version: 1
+              children:
+                - mode: normal
+                  text: >-
+                    At Reactr Studios, our mission is to drive digital
+                    transformation by empowering businesses to reach new heights
+                    of engagement and efficiency. We specialize in engineering
+                    Digital Experience Platforms that blend cutting-edge
+                    technology with a deeply human-centric approach.
+                  type: text
+                  style: ''
+                  detail: 0
+                  format: 0
+                  version: 1
+              direction: null
+              textStyle: ''
+              textFormat: 0
+            - type: paragraph
+              format: ''
+              indent: 0
+              version: 1
+              children:
+                - mode: normal
+                  text: >-
+                    Our commitment is to continually push the boundaries of
+                    innovation, delivering tailored solutions that captivate
+                    users, strengthen brand stories, and foster sustainable
+                    growth. Reactr Studios is devoted to shaping the future—one
+                    remarkable digital experience at a time.
+                  type: text
+                  style: ''
+                  detail: 0
+                  format: 0
+                  version: 1
+              direction: null
+              textStyle: ''
+              textFormat: 0
+          direction: null
+    variant:
+      type: select
+      value: imageLeft
+    imageAlt:
+      type: text
+      value: >-
+        A group of diverse people working together, symbolizing teamwork and the
+        organization's mission in action.
+    sectionId:
+      type: text
+      value: mission
+    backgroundColor:
+      type: text
+      value: bg-white/30
+  slots:
+    features:
+      - _id: 434b96ac-43fd-43e4-a217-bf738c338d29
+        type: feature
+        parameters:
+          icon:
+            type: text
+            value: baby
+          label:
+            type: text
+            value: feature
+      - _id: ba80138c-2d8d-48fe-95a1-0db31e424536
+        type: feature
+  _overridability:
+    parameters:
+      title: 'yes'
+      content: 'yes'
+      variant: 'yes'
+      imageAlt: 'yes'
+      sectionId: 'yes'
+      backgroundColor: 'yes'
+    hideLockedParameters: true
+created: '2025-07-03T14:39:53.255542+00:00'
+modified: '2025-07-03T21:55:24.47273+00:00'
+pattern: true

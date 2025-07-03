@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: imageTextSection
+name: Image Text Section
+icon: screen
+parameters:
+  - id: title
+    name: Title
+    type: text
+    guidance: Section title - last two words will have gradient styling
+    localizable: true
+  - id: content
+    name: Content
+    type: richText
+    guidance: Rich text content for the section
+    localizable: true
+  - id: image
+    name: Image
+    type: asset
+    guidance: Main image for the section
+    typeConfig:
+      allowedTypes:
+        - image
+  - id: imageAlt
+    name: Image Alt Text
+    type: text
+    guidance: Alternative text for the image
+    localizable: true
+  - id: variant
+    name: Layout Variant
+    type: select
+    guidance: Position of the image relative to text
+    typeConfig:
+      options:
+        - text: Image Right
+          value: imageRight
+        - text: Image Left
+          value: imageLeft
+  - id: backgroundColor
+    name: Background Color
+    type: text
+    guidance: Tailwind CSS background color class (e.g., bg-white/30)
+  - id: sectionId
+    name: Section ID
+    type: text
+    guidance: HTML ID for the section (for navigation)
+description: A section with text content and an image that can be positioned left or right
+useTeamPermissions: true
+slots:
+  - id: features
+    name: Features
+    maxComponents: 4
+    minComponents: 0
+    allowedComponents:
+      - feature
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: true
+titleParameter: title
+thumbnailParameter: image
+canBeComposition: false
+created: '2025-07-03T14:37:01.333744+00:00'
+updated: '2025-07-03T14:37:01.333744+00:00'

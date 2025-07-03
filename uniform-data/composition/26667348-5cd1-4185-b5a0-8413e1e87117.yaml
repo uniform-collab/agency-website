@@ -1,0 +1,23 @@
+composition:
+  _name: Home
+  _id: 26667348-5cd1-4185-b5a0-8413e1e87117
+  _slug: /
+  type: page
+  parameters:
+    metaTitle:
+      type: text
+      value: Home
+  slots:
+    content:
+      - _id: b05c7884-6b38-4731-94b6-4dcb0fecff7c
+        type: heroSection
+        _pattern: 594fab46-3f16-45c8-9930-9a76a09b8c77
+      - _id: 5fe90bd2-e9bf-445f-bc09-58384c3f1d7d
+        type: imageTextSection
+        _pattern: f16b0f0e-8474-4494-8b57-d3f3019db96b
+      - _id: ea424688-65e4-4df0-b082-703af5a7e37a
+        type: imageTextSection
+        _pattern: 923a1e22-4d9e-4984-96e2-2a4f08ec0a92
+created: '2025-07-03T13:16:17.53312+00:00'
+modified: '2025-07-03T21:56:30.864609+00:00'
+pattern: false

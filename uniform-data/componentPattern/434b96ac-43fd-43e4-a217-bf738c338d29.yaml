@@ -1,0 +1,19 @@
+composition:
+  _name: Feature - Transformative Impact
+  _id: 434b96ac-43fd-43e4-a217-bf738c338d29
+  type: feature
+  parameters:
+    icon:
+      type: text
+      value: Zap
+    label:
+      type: text
+      value: Transformative Impact
+  _overridability:
+    parameters:
+      icon: 'yes'
+      label: 'yes'
+    hideLockedParameters: true
+created: '2025-07-03T14:38:56.288943+00:00'
+modified: '2025-07-03T14:38:56.288943+00:00'
+pattern: true

@@ -1,3 +1,5 @@
+const { withUniformConfig } = require("@uniformdev/canvas-next-rsc/config");
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   eslint: {
@@ -16,4 +18,4 @@ const nextConfig = {
   },
 }
 
-export default nextConfig
+export default withUniformConfig(nextConfig);

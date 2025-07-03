@@ -1,0 +1,70 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: heroSection
+name: Hero Section
+icon: screen
+parameters:
+  - id: titleLine1
+    name: Title Line 1
+    type: text
+    guidance: First line of the hero title
+    localizable: true
+  - id: titleLine2
+    name: Title Line 2
+    type: text
+    guidance: Second line of the hero title with gradient styling
+    localizable: true
+  - id: subtitle
+    name: Subtitle
+    type: text
+    guidance: Hero subtitle text that appears below the title
+    localizable: true
+  - id: primaryButtonLabel
+    name: Primary Button Label
+    type: text
+    guidance: Label for the primary call-to-action button (leave empty to hide)
+    localizable: true
+  - id: primaryButtonLink
+    name: Primary Button Link
+    type: link
+    guidance: URL or internal link for the primary button
+  - id: primaryButtonStyle
+    name: Primary Button Style
+    type: select
+    guidance: Visual style for the primary button
+    typeConfig:
+      options:
+        - text: Solid
+          value: solid
+        - text: Outline
+          value: outline
+        - text: Ghost
+          value: ghost
+  - id: secondaryButtonLabel
+    name: Secondary Button Label
+    type: text
+    guidance: Label for the secondary call-to-action button (leave empty to hide)
+    localizable: true
+  - id: secondaryButtonLink
+    name: Secondary Button Link
+    type: link
+    guidance: URL or internal link for the secondary button
+  - id: secondaryButtonStyle
+    name: Secondary Button Style
+    type: select
+    guidance: Visual style for the secondary button
+    typeConfig:
+      options:
+        - text: Solid
+          value: solid
+        - text: Outline
+          value: outline
+        - text: Ghost
+          value: ghost
+description: A hero section with title, subtitle, and two action buttons
+useTeamPermissions: true
+slots: []
+titleParameter: titleLine1
+canBeComposition: false
+created: '2025-07-03T13:23:17.177042+00:00'
+updated: '2025-07-03T13:27:22.050874+00:00'
