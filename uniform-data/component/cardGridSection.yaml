@@ -1,0 +1,60 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: cardGridSection
+name: Card Grid Section
+icon: grid-3x3
+parameters:
+  - id: sectionId
+    name: Section ID
+    type: text
+    guidance: HTML ID for the section (for navigation)
+  - id: title
+    name: Title
+    type: text
+    guidance: Section title
+    localizable: true
+    required: true
+  - id: subtitle
+    name: Subtitle
+    type: text
+    guidance: Section subtitle
+    localizable: true
+    required: true
+  - id: variant
+    name: Variant
+    type: select
+    guidance: Grid layout variant that determines styling and column count
+    typeConfig:
+      options:
+        - text: Services
+          value: services
+        - text: Portfolio
+          value: portfolio
+        - text: Process
+          value: process
+  - id: backgroundColor
+    name: Background Color
+    type: text
+    guidance: Tailwind CSS background color class (e.g., bg-white/30)
+  - id: className
+    name: CSS Classes
+    type: text
+    guidance: Additional CSS classes
+description: A responsive grid section that displays cards in different layouts based on variant
+useTeamPermissions: true
+slots:
+  - id: cards
+    name: Cards
+    maxComponents: 20
+    minComponents: 1
+    allowedComponents:
+      - serviceCard
+      - projectCard
+      - processStep
+    allowAllComponents: true
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: false
+titleParameter: title
+canBeComposition: false
+created: '2025-07-03T15:00:00.000000+00:00'
+updated: '2025-07-03T15:00:00.000000+00:00'

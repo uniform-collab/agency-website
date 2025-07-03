@@ -1,0 +1,27 @@
+composition:
+  _name: Service Card - Platform Implementation
+  _id: 72e23f5a-1234-4567-8901-123456789abc
+  type: serviceCard
+  parameters:
+    icon:
+      type: text
+      value: Layers
+    iconColor:
+      type: text
+      value: text-teal-400
+    title:
+      type: text
+      value: Platform Implementation
+    description:
+      type: text
+      value: Seamless integration and customization of leading DXP solutions tailored to your unique needs.
+  _overridability:
+    parameters:
+      icon: 'yes'
+      iconColor: 'yes'
+      title: 'yes'
+      description: 'yes'
+    hideLockedParameters: true
+created: '2025-07-03T15:00:00.000000+00:00'
+modified: '2025-07-03T15:00:00.000000+00:00'
+pattern: true

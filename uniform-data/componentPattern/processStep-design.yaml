@@ -1,0 +1,27 @@
+composition:
+  _name: Process Step - Design & Prototyping
+  _id: 82e23f5a-1234-4567-8901-123456789abc
+  type: processStep
+  parameters:
+    icon:
+      type: text
+      value: Palette
+    iconColor:
+      type: text
+      value: text-teal-400
+    title:
+      type: text
+      value: Design & Prototyping
+    description:
+      type: text
+      value: Crafting intuitive interfaces and validating concepts.
+  _overridability:
+    parameters:
+      icon: 'yes'
+      iconColor: 'yes'
+      title: 'yes'
+      description: 'yes'
+    hideLockedParameters: true
+created: '2025-07-03T15:00:00.000000+00:00'
+modified: '2025-07-03T15:00:00.000000+00:00'
+pattern: true

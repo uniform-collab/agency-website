@@ -1,0 +1,27 @@
+composition:
+  _name: Service Card - DXP Strategy & Consulting
+  _id: 71e23f5a-1234-4567-8901-123456789abc
+  type: serviceCard
+  parameters:
+    icon:
+      type: text
+      value: Search
+    iconColor:
+      type: text
+      value: text-purple-400
+    title:
+      type: text
+      value: DXP Strategy & Consulting
+    description:
+      type: text
+      value: Crafting bespoke DXP roadmaps aligned with your business goals for maximum impact and ROI.
+  _overridability:
+    parameters:
+      icon: 'yes'
+      iconColor: 'yes'
+      title: 'yes'
+      description: 'yes'
+    hideLockedParameters: true
+created: '2025-07-03T15:00:00.000000+00:00'
+modified: '2025-07-03T15:00:00.000000+00:00'
+pattern: true

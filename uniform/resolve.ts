@@ -15,6 +15,11 @@ import ContactFormSection from "@/components/sections/ContactFormSection";
 import PageComponent from "@/components/Page";
 import Feature from "@/components/sections/Feature";
 
+// Import card components
+import ServiceCard from "@/components/cards/ServiceCard";
+import ProjectCard from "@/components/cards/ProjectCard";
+import ProcessStep from "@/components/cards/ProcessStep";
+
 export const resolveComponent: ResolveComponentFunction = ({ component }) => {
   let result: ResolveComponentResult = {
     component: DefaultNotImplementedComponent,
@@ -65,6 +70,21 @@ export const resolveComponent: ResolveComponentFunction = ({ component }) => {
     case "feature":
       result = {
         component: Feature,
+      };
+      break;
+    case "serviceCard":
+      result = {
+        component: ServiceCard,
+      };
+      break;
+    case "projectCard":
+      result = {
+        component: ProjectCard,
+      };
+      break;
+    case "processStep":
+      result = {
+        component: ProcessStep,
       };
       break;
     default:

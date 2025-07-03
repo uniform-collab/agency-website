@@ -1,0 +1,27 @@
+composition:
+  _name: Service Card - Experience Design (UX/UI)
+  _id: 73e23f5a-1234-4567-8901-123456789abc
+  type: serviceCard
+  parameters:
+    icon:
+      type: text
+      value: Palette
+    iconColor:
+      type: text
+      value: text-pink-400
+    title:
+      type: text
+      value: Experience Design (UX/UI)
+    description:
+      type: text
+      value: Designing intuitive, engaging, and visually stunning user experiences that captivate and convert.
+  _overridability:
+    parameters:
+      icon: 'yes'
+      iconColor: 'yes'
+      title: 'yes'
+      description: 'yes'
+    hideLockedParameters: true
+created: '2025-07-03T15:00:00.000000+00:00'
+modified: '2025-07-03T15:00:00.000000+00:00'
+pattern: true

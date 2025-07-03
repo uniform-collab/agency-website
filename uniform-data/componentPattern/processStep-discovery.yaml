@@ -1,0 +1,27 @@
+composition:
+  _name: Process Step - Discovery & Strategy
+  _id: 81e23f5a-1234-4567-8901-123456789abc
+  type: processStep
+  parameters:
+    icon:
+      type: text
+      value: Lightbulb
+    iconColor:
+      type: text
+      value: text-purple-400
+    title:
+      type: text
+      value: Discovery & Strategy
+    description:
+      type: text
+      value: Understanding your vision and defining a clear path to success.
+  _overridability:
+    parameters:
+      icon: 'yes'
+      iconColor: 'yes'
+      title: 'yes'
+      description: 'yes'
+    hideLockedParameters: true
+created: '2025-07-03T15:00:00.000000+00:00'
+modified: '2025-07-03T15:00:00.000000+00:00'
+pattern: true

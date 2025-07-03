@@ -1,0 +1,42 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: projectCard
+name: Project Card
+icon: folder
+parameters:
+  - id: image
+    name: Image
+    type: asset
+    guidance: Project image
+    typeConfig:
+      allowedTypes:
+        - image
+  - id: imageAlt
+    name: Image Alt Text
+    type: text
+    guidance: Alternative text for the image
+    localizable: true
+  - id: title
+    name: Title
+    type: text
+    guidance: Project title
+    localizable: true
+    required: true
+  - id: description
+    name: Description
+    type: text
+    guidance: Project description
+    localizable: true
+    required: true
+  - id: tags
+    name: Tags
+    type: text
+    guidance: Comma-separated list of project tags
+    localizable: true
+description: A project card with image, title, description and tags
+useTeamPermissions: true
+titleParameter: title
+thumbnailParameter: image
+canBeComposition: false
+created: '2025-07-03T15:00:00.000000+00:00'
+updated: '2025-07-03T15:00:00.000000+00:00'

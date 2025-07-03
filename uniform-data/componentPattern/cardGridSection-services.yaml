@@ -1,0 +1,40 @@
+composition:
+  _name: Card Grid Section - Our Core Schematics
+  _id: 91e23f5a-1234-4567-8901-123456789abc
+  type: cardGridSection
+  parameters:
+    sectionId:
+      type: text
+      value: services
+    title:
+      type: text
+      value: Our Core Schematics
+    subtitle:
+      type: text
+      value: A full suite of services to architect, construct, and refine your Digital Experience Platform.
+    variant:
+      type: select
+      value: services
+    backgroundColor:
+      type: text
+      value: bg-white/30
+  slots:
+    cards:
+      - _id: 71e23f5a-1234-4567-8901-123456789abc
+        type: serviceCard
+      - _id: 72e23f5a-1234-4567-8901-123456789abc
+        type: serviceCard
+      - _id: 73e23f5a-1234-4567-8901-123456789abc
+        type: serviceCard
+  _overridability:
+    parameters:
+      sectionId: 'yes'
+      title: 'yes'
+      subtitle: 'yes'
+      variant: 'yes'
+      backgroundColor: 'yes'
+      className: 'yes'
+    hideLockedParameters: true
+created: '2025-07-03T15:00:00.000000+00:00'
+modified: '2025-07-03T15:00:00.000000+00:00'
+pattern: true
