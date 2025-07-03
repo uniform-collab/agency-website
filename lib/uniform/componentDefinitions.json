@@ -1,0 +1,41 @@
+{
+  "components": [
+    {
+      "id": "contactFormSection",
+      "name": "Contact Form Section",
+      "icon": "📞",
+      "parameters": [
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "text",
+          "required": true
+        },
+        {
+          "id": "subtitle",
+          "name": "Subtitle",
+          "type": "text",
+          "required": true
+        },
+        {
+          "id": "form",
+          "name": "Form Configuration",
+          "type": "json",
+          "required": true
+        },
+        {
+          "id": "id",
+          "name": "Section ID",
+          "type": "text",
+          "required": false
+        },
+        {
+          "id": "className",
+          "name": "CSS Classes",
+          "type": "text",
+          "required": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import { ComponentProps } from '@uniformdev/canvas-react';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -24,7 +25,7 @@ interface ContactForm {
   submitButton: SubmitButton;
 }
 
-interface ContactFormSectionProps {
+interface ContactFormSectionProps extends Partial<ComponentProps> {
   id?: string;
   title: string;
   subtitle: string;
