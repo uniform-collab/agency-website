@@ -93,9 +93,16 @@ module.exports = {
             backgroundPosition: "350% 50%, 350% 50%",
           },
         },
+        marquee: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
       },
       animation: {
         aurora: "aurora 60s linear infinite",
+        marquee: "marquee 25s linear infinite",
+        "marquee-slow": "marquee 40s linear infinite",
+        "marquee-fast": "marquee 15s linear infinite",
       },
     },
   },
