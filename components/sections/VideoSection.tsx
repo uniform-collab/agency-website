@@ -15,8 +15,8 @@ export default function VideoSection({
   videoUrl = "https://res.cloudinary.com/uniform-demos/video/upload/v1752097049/agency-website/854011-hd_1920_1080_30fps_dbt5bx.mp4",
   posterImage,
   muted = true,
-  autoplay = false,
-  controls = true,
+  autoplay = true,
+  controls = false,
   className = "",
 }: VideoSectionProps) {
   const containerRef = useRef<HTMLDivElement>(null);
