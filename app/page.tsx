@@ -9,6 +9,7 @@ import MarqueeSection from "@/components/sections/MarqueeSection";
 import ImageTextSection from "@/components/sections/ImageTextSection";
 import CardGridSection from "@/components/sections/CardGridSection";
 import ContactFormSection from "@/components/sections/ContactFormSection";
+import VideoSection from "@/components/sections/VideoSection";
 
 export default function AgencyLandingPage() {
   return (
@@ -84,6 +85,14 @@ export default function AgencyLandingPage() {
           subtitle={cmsData.processSection.subtitle}
           variant="process"
           items={cmsData.processSection.steps}
+        />
+
+        {/* Video Section */}
+        <VideoSection
+          videoUrl={cmsData.videoSection.videoUrl}
+          posterImage={cmsData.videoSection.posterImage}
+          muted={cmsData.videoSection.muted}
+          controls={cmsData.videoSection.controls}
         />
 
         {/* Contact Section */}
